@@ -66,9 +66,7 @@ Classification uses the unrounded average; display uses two decimal places.
   captured log and metadata are in `evidence/phase-6-remote-ci.txt` and
   `evidence/phase-6-remote-ci.json`. This exercised `workflow_dispatch`, not the
   configured `pull_request` trigger.
-- The definitive PDF will be submitted directly to Canvas by the user; it is not
-  a repository deliverable. [Markdown source](docs/lab-report.md) remains a review
-  draft, not the final report. The local PDF is unchanged and excluded from the current tracked files; its previously approved draft remains in Git history.
+- Four-section English report: [Markdown source](docs/lab-report.md).
 - The repository includes the tested implementation at commit
   `e59c46bfe464a55989868f1d41e67af4a9914c41`; the local test (21 methods) and
   lint (zero findings) results remain unchanged.

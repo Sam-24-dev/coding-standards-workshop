@@ -1,8 +1,6 @@
 ESPOL Software Engineering II - Coding Standards Workshop
 Lab report | Python | 2026-10-08 | Ecuador UTC-5
 
-Lab report | Python | 2026-10-08 | Ecuador UTC-5
-
 # Introduction
 
 This workshop refactors a deliberately faulty Python student-grade program into a working terminal application, while preserving the initial source and comparing authentic initial and final HTML coding-standards reports.
@@ -11,29 +9,29 @@ Python was selected for its readable syntax and standard-library support. Flake8
 
 The initial enabled checks found one F841 unused-variable warning, not every functional defect. Therefore linting was combined with manual code review, unit tests, and real subprocess CLI exercises. Zero lint findings alone does not prove that a program meets its requirements.
 
-## Repository and submission status
+## Repository and verified results
 
 [https://github.com/Sam-24-dev/coding-standards-workshop](https://github.com/Sam-24-dev/coding-standards-workshop)
 
 [Published original commit b6261a9](https://github.com/Sam-24-dev/coding-standards-workshop/commit/b6261a990d2c92d57d6d411113817c3b0c7b4a73)
 
-At report preparation, the public repository contains the original baseline. The final implementation, reports, screenshots, workflow, and this PDF are prepared locally; final publication awaits the user's file-review approval. The repository links above are current public links. Relative artifact paths in this report refer to the prepared submission, not already-uploaded files.
+The public repository contains the completed implementation, preserved original archive, initial and final HTML reports with their assets, tests, authentic evidence, and workflow. The report links below point to repository artifacts.
 
-Canvas accepts PDF only. docs/lab-report.pdf is the primary submission. The original and final HTML reports with their assets remain separate supplementary repository artifacts; screenshots do not replace them.
+The initial and final HTML reports are separate coding-standard snapshots; screenshots supplement rather than replace the generated reports.
 
 # Development
 
 ## 1. Preserve and publish the original baseline
 
-The original test.py was committed and published before refactoring. A literal copy remains at original/test.py. Its 42-line source SHA256 is 2049753365204B1D6BF7E02CEF0A0A15A8709213D0D2EC59740831867D845786. The archive is intentionally excluded from active final lint and test scopes so its preserved defects are not silently corrected or suppressed.
+The original `test.py` was committed and published before refactoring. A literal copy remains at `../original/test.py`. Its 42-line source SHA256 is 2049753365204B1D6BF7E02CEF0A0A15A8709213D0D2EC59740831867D845786. The archive is intentionally excluded from active final lint and test scopes so its preserved defects are not silently corrected or suppressed.
 
 ## 2. Run the initial tool and inspect runtime behavior
 
-The unchanged baseline produced one F841 finding: local variable avg was assigned but never used. Flake8 exited 1, as expected for a finding. The initial HTML snapshot is reports/initial/index.html, with linked source, finding-detail, stylesheet, and SVG assets preserved unchanged.
+The unchanged baseline produced one F841 finding: local variable avg was assigned but never used. Flake8 exited 1, as expected for a finding. The initial HTML snapshot is `../reports/initial/index.html`, with linked source, finding-detail, stylesheet, and SVG assets preserved unchanged.
 
 Executing the original stopped with TypeError because a text grade, Fifty, was added and then accumulated with numbers. That observed error precedes other defects: average division is always by zero if reached, no average is returned, calcAverage does not match calcaverage, honor is not boolean, letter/status logic is absent, summary fields are invalid or missing, and deletion lacks bounds or missing-value handling.
 
-The public runtime derivative evidence/public/phase-2-original-runtime.txt redacts private absolute paths and declares that transformation and the raw source hash. The local raw capture remains unchanged. The privacy-redacted version record is evidence/public/tool-versions.txt.
+The public runtime derivative `../evidence/public/phase-2-original-runtime.txt` redacts private absolute paths and declares that transformation and the raw source hash. The local raw capture remains unchanged. The privacy-redacted version record is `../evidence/public/tool-versions.txt`.
 
 ## 3. Refactor the application and check manually
 
@@ -69,17 +67,17 @@ Verbatim final output summary: Ran 21 tests in 0.600s; OK.
 
 5. Final analysis: python -m flake8 --isolated test.py tests --format=html --htmldir=reports/final --htmlpep8 true --statistics exited 0. The explicit true value is required by flake8-html 0.4.3. The genuine generated index says No flake8 errors found in 2 files scanned.
 
-The initial finding count changed from 1 to 0. Runtime and logic fixes are additional functional improvements, not additional observed lint findings. The clean plugin generated index.html, styles.css, and SVG assets; it did not generate per-file error pages, and none were fabricated.
+The initial finding count changed from 1 to 0. Runtime and logic fixes are additional functional improvements, not additional observed lint findings. The clean plugin generated `../reports/final/index.html` and its linked stylesheet/SVG assets; it did not generate per-file error pages, and none were fabricated.
 
-The final lint capture evidence/phase-5-final-lint.txt is intentionally empty because successful stdout and stderr were both empty. evidence/verification-metadata.json records exact commands, exit codes, and byte counts separately. Final tests were rerun after naming the business constants.
+The final lint capture `../evidence/phase-5-final-lint.txt` is intentionally empty because successful stdout and stderr were both empty. `../evidence/verification-metadata.json` records exact commands, exit codes, and byte counts separately. Final tests were rerun after naming the business constants.
 
-## 6. Prepare the optional workflow challenge
+## 6. Configure and verify the workflow challenge
 
-.github/workflows/coding-standards.yml declares pull_request targeting main and workflow_dispatch, contents: read, ubuntu-latest, and Python 3.11. It installs requirements-dev.txt, runs python -m flake8 --isolated test.py tests, then python -m unittest discover -s tests -v.
+[`.github/workflows/coding-standards.yml`](../.github/workflows/coding-standards.yml) declares pull_request targeting main and workflow_dispatch, contents: read, ubuntu-latest, and Python 3.11. It installs [requirements-dev.txt](../requirements-dev.txt), runs `python -m flake8 --isolated test.py tests`, then `python -m unittest discover -s tests -v`.
 
-Official checkout v6 and setup-python v7 tags were resolved via read-only GitHub API calls and pinned to immutable action SHAs with version comments. Local PyYAML parsing and assertions checked triggers, main branch, permission, runner, Python version, and intended commands. This is not an actionlint check or proof of an actual GitHub run.
+Official checkout v6 and setup-python v7 tags were resolved via read-only GitHub API calls and pinned to immutable action SHAs with version comments. Local PyYAML parsing and assertions checked triggers, main branch, permission, runner, Python version, and intended commands. These checks are not actionlint and are distinct from the actual remote run below.
 
-Remote publication and remote CI execution are PENDING approval. No workflow run, successful pull-request trigger, or CI pass is claimed. After approval, publish the prepared files and inspect a real manual run.
+A real GitHub Actions manual run completed successfully at [run 37816498780](https://github.com/Sam-24-dev/coding-standards-workshop/actions/runs/37816498780), against tested source commit `e59c46bfe464a55989868f1d41e67af4a9914c41`. The `lint-and-test` job passed dependency installation, `python -m flake8 --isolated test.py tests`, and `python -m unittest discover -s tests -v` (21 tests). The raw run log and metadata are `../evidence/phase-6-remote-ci.txt` and `../evidence/phase-6-remote-ci.json`. This was a `workflow_dispatch` run; the configured `pull_request` trigger was not exercised.
 
 ## Evidence authenticity
 
@@ -87,7 +85,7 @@ The following numbered figures are genuine screenshots. Browser views of saved t
 
 ## Development - evidence 1
 
-The public repository page establishes the genuine original publication; later deliverables still await final release approval.
+This screenshot documents the initial public repository before refactoring; it is historical baseline evidence, not the current repository state.
 
 ![Figure 1. Published public repository before refactoring.](../evidence/phase-1-public-repository.png)
 
@@ -167,19 +165,27 @@ Figure 10. Authentic verification metadata displayed in a browser.
 
 ## Development - evidence 11
 
-The genuine saved local validation result confirms YAML checks and local commands only; no remote GitHub run is represented.
+This genuine local validation capture shows the PyYAML assertions only; the remote GitHub run is documented separately below.
 
 ![Figure 11. Local workflow validation evidence.](../evidence/phase-6-workflow-validation.png)
 
 Figure 11. Local workflow validation evidence.
 
+## Development - evidence 12
+
+The browser capture shows the completed manual GitHub Actions run. The run tested source commit e59c46bfe464a55989868f1d41e67af4a9914c41; all job steps succeeded.
+
+![Figure 12. Successful manual GitHub Actions workflow run.](../evidence/phase-6-remote-ci-success.png)
+
+Figure 12. Successful manual GitHub Actions workflow run.
+
 # Conclusions
 
-The preserved original program failed during numeric accumulation. The completed local program implements all nine required behaviors, validates trust-boundary inputs, uses meaningful PEP 8 names and named business thresholds, and derives results from current grades without stale cached status.
+The preserved original program failed during numeric accumulation. The completed program implements all nine required behaviors, validates trust-boundary inputs, uses meaningful PEP 8 names and named business thresholds, and derives results from current grades without stale cached status.
 
 Observed local evidence consists of one initial F841 finding, zero final findings across two active files, 21 passing unittest methods, and a successful real CLI exercise. This combination is stronger than linting alone, but it does not establish a measured coverage percentage or production readiness.
 
-The initial and final HTML reports are preserved as distinct artifacts with their assets. The PDF includes process figures, requirement traceability, repository links, and clear evidence boundaries. Final repository publication requires user approval; remote CI remains unverified until the workflow is published and an actual run is inspected.
+The initial and final HTML reports are preserved as distinct artifacts with their assets. The published repository contains the final implementation and supporting evidence. The actual manual GitHub Actions run also passed lint and all 21 behavioral tests; this does not establish a measured coverage percentage or production readiness.
 
 This teaching application keeps student data only in memory. IDs are case-sensitive and unique within a CLI session; no personal student dataset is used in demonstration evidence. There is no disk persistence, database, GUI, export facility, or guarantee of a particular rubric score.
 
@@ -187,8 +193,8 @@ This teaching application keeps student data only in memory. IDs are case-sensit
 
 Retain the pinned lint commands, behavioral tests, and manual review together. Run them after future edits and keep initial/final report scopes explicit. Do not treat a clean Flake8 output as proof that every business rule works.
 
-After reviewing the final file summary and approving publication, verify the remote workflow through an actual GitHub run. Record its URL and real result before claiming the optional CI challenge has executed successfully. Until then, preserve the explicit PENDING status.
+Keep the pull-request workflow configured for `main`; verify that trigger separately when a real pull request is available, since the observed success was from manual `workflow_dispatch`. Continue to run pinned lint commands, tests, and manual review after changes.
 
-Submit docs/lab-report.pdf to Canvas. Once publication is approved, keep the application, tests, original archive, HTML reports, screenshots, and captured logs available in the repository for reproducibility. Privacy-redacted public derivatives should remain clearly marked, while local raw evidence remains unchanged and excluded from publication.
+Keep the application, tests, original archive, HTML reports, screenshots, and captured logs available in the repository for reproducibility. Privacy-redacted public derivatives should remain clearly marked, while local raw evidence remains unchanged and excluded from publication.
 
 Add persistence or other capabilities only if a future requirement needs them; that would require fresh validation and tests. For this workshop, the small standard-library implementation is sufficient.
