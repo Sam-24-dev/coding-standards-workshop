@@ -6,3 +6,4 @@ __pycache__/
 /evidence/tool-versions.txt
 /evidence/baseline-preservation.json
 /evidence/implementation-freeze.json
+/docs/lab-report.pdf

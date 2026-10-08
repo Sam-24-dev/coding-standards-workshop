@@ -57,17 +57,21 @@ Classification uses the unrounded average; display uses two decimal places.
 - [Behavioral tests](tests/test_student.py): 21 passing unittest methods;
   subTest cases are not counted as separate tests.
 - [Evidence index](evidence/README.md), authentic process screenshots, captured outputs, and [privacy-redacted tool versions](evidence/public/tool-versions.txt) are retained.
-  Phases 1-6 have authentic screenshots, including local workflow validation;
-  there is no actual remote CI screenshot or run yet.
+  Phases 1-6 include local workflow validation and an [authentic remote CI screenshot](evidence/phase-6-remote-ci-success.png).
 - [CI workflow](.github/workflows/coding-standards.yml) runs lint and tests for
-  pull requests to main and supports manual dispatch. Remote execution is pending.
-- Complete English [PDF lab report](docs/lab-report.pdf) with Introduction,
-  Development, Conclusions, and Recommendations: generated locally and validated
-  (16 pages, 11 authentic figures). [Markdown source](docs/lab-report.md).
-  Canvas accepts PDF only; HTML reports remain supplementary evidence.
-- Final publication is pending user approval of the file summary.
-  The public repository currently contains the original baseline; final local
-  artifacts are not yet uploaded. Actual remote CI execution remains pending.
+  pull requests to main and supports manual dispatch. A manual dispatch on `main`
+  at commit `e59c46bfe464a55989868f1d41e67af4a9914c41` succeeded: the job,
+  pinned dependency install, lint, and behavioral tests all passed. See the
+  [GitHub Actions run](https://github.com/Sam-24-dev/coding-standards-workshop/actions/runs/37816498780);
+  captured log and metadata are in `evidence/phase-6-remote-ci.txt` and
+  `evidence/phase-6-remote-ci.json`. This exercised `workflow_dispatch`, not the
+  configured `pull_request` trigger.
+- The definitive PDF will be submitted directly to Canvas by the user; it is not
+  a repository deliverable. [Markdown source](docs/lab-report.md) remains a review
+  draft, not the final report. The local PDF is unchanged and excluded from the current tracked files; its previously approved draft remains in Git history.
+- The repository includes the tested implementation at commit
+  `e59c46bfe464a55989868f1d41e67af4a9914c41`; the local test (21 methods) and
+  lint (zero findings) results remain unchanged.
 
 Generated HTML timestamps reflect the host UTC+1 timezone, not Ecuador UTC-5.
 The generated reports and screenshots are not edited to change their timestamps.

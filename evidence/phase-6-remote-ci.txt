@@ -1,0 +1,252 @@
+lint-and-test	Set up job	﻿2026-10-08T17:26:00.9620310Z Current runner version: '2.337.0'
+lint-and-test	Set up job	2026-10-08T17:26:00.9638351Z ##[group]Runner Image Provisioner
+lint-and-test	Set up job	2026-10-08T17:26:00.9638902Z Hosted Compute Agent
+lint-and-test	Set up job	2026-10-08T17:26:00.9639390Z Version: 20261002.596
+lint-and-test	Set up job	2026-10-08T17:26:00.9639958Z Commit: c3d12f3313a95f25162a1503be624f3b0617f8c0
+lint-and-test	Set up job	2026-10-08T17:26:00.9640384Z Build Date: 2026-10-02T22:28:27Z
+lint-and-test	Set up job	2026-10-08T17:26:00.9640840Z Worker ID: {f9f2741d-aa56-4935-9028-e6de68aeacc3}
+lint-and-test	Set up job	2026-10-08T17:26:00.9641280Z Region: centralus
+lint-and-test	Set up job	2026-10-08T17:26:00.9641705Z Cloud: Azure
+lint-and-test	Set up job	2026-10-08T17:26:00.9642069Z ##[endgroup]
+lint-and-test	Set up job	2026-10-08T17:26:00.9643086Z ##[group]Operating System
+lint-and-test	Set up job	2026-10-08T17:26:00.9643501Z Ubuntu
+lint-and-test	Set up job	2026-10-08T17:26:00.9643826Z 24.04.5
+lint-and-test	Set up job	2026-10-08T17:26:00.9644224Z LTS
+lint-and-test	Set up job	2026-10-08T17:26:00.9644576Z ##[endgroup]
+lint-and-test	Set up job	2026-10-08T17:26:00.9644937Z ##[group]Runner Image
+lint-and-test	Set up job	2026-10-08T17:26:00.9645400Z Image: ubuntu-24.04
+lint-and-test	Set up job	2026-10-08T17:26:00.9645746Z Version: 20261004.327.1
+lint-and-test	Set up job	2026-10-08T17:26:00.9646402Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261004.327/images/ubuntu/Ubuntu2404-Readme.md
+lint-and-test	Set up job	2026-10-08T17:26:00.9647472Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261004.327
+lint-and-test	Set up job	2026-10-08T17:26:00.9648070Z ##[endgroup]
+lint-and-test	Set up job	2026-10-08T17:26:00.9648776Z ##[group]GITHUB_TOKEN Permissions
+lint-and-test	Set up job	2026-10-08T17:26:00.9650281Z Contents: read
+lint-and-test	Set up job	2026-10-08T17:26:00.9650643Z Metadata: read
+lint-and-test	Set up job	2026-10-08T17:26:00.9650971Z ##[endgroup]
+lint-and-test	Set up job	2026-10-08T17:26:00.9652327Z Secret source: Actions
+lint-and-test	Set up job	2026-10-08T17:26:00.9652915Z Cache mode: write
+lint-and-test	Set up job	2026-10-08T17:26:00.9653406Z Prepare workflow directory
+lint-and-test	Set up job	2026-10-08T17:26:00.9866169Z Prepare all required actions
+lint-and-test	Set up job	2026-10-08T17:26:00.9901213Z Getting action download info
+lint-and-test	Set up job	2026-10-08T17:26:01.2136462Z Download action repository 'actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803' (SHA:d23441a48e516b6c34aea4fa41551a30e30af803)
+lint-and-test	Set up job	2026-10-08T17:26:01.2799969Z Download action repository 'actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97' (SHA:5fda3b95a4ea91299a34e894583c3862153e4b97)
+lint-and-test	Set up job	2026-10-08T17:26:01.4408838Z Complete job name: lint-and-test
+lint-and-test	Check out repository	﻿2026-10-08T17:26:01.4834521Z ##[group]Run actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+lint-and-test	Check out repository	2026-10-08T17:26:01.4835022Z with:
+lint-and-test	Check out repository	2026-10-08T17:26:01.4835286Z   repository: Sam-24-dev/coding-standards-workshop
+lint-and-test	Check out repository	2026-10-08T17:26:01.4837376Z   token: ***
+lint-and-test	Check out repository	2026-10-08T17:26:01.4837603Z   ssh-strict: true
+lint-and-test	Check out repository	2026-10-08T17:26:01.4837833Z   ssh-user: git
+lint-and-test	Check out repository	2026-10-08T17:26:01.4838070Z   persist-credentials: true
+lint-and-test	Check out repository	2026-10-08T17:26:01.4838327Z   clean: true
+lint-and-test	Check out repository	2026-10-08T17:26:01.4838570Z   sparse-checkout-cone-mode: true
+lint-and-test	Check out repository	2026-10-08T17:26:01.4838841Z   fetch-depth: 1
+lint-and-test	Check out repository	2026-10-08T17:26:01.4839069Z   fetch-tags: false
+lint-and-test	Check out repository	2026-10-08T17:26:01.4839302Z   show-progress: true
+lint-and-test	Check out repository	2026-10-08T17:26:01.4839655Z   lfs: false
+lint-and-test	Check out repository	2026-10-08T17:26:01.4839873Z   submodules: false
+lint-and-test	Check out repository	2026-10-08T17:26:01.4840112Z   set-safe-directory: true
+lint-and-test	Check out repository	2026-10-08T17:26:01.4840383Z   allow-unsafe-pr-checkout: false
+lint-and-test	Check out repository	2026-10-08T17:26:01.4840727Z ##[endgroup]
+lint-and-test	Check out repository	2026-10-08T17:26:01.5459794Z Syncing repository: Sam-24-dev/coding-standards-workshop
+lint-and-test	Check out repository	2026-10-08T17:26:01.5461383Z ##[group]Getting Git version info
+lint-and-test	Check out repository	2026-10-08T17:26:01.5462189Z Working directory is '/home/runner/work/coding-standards-workshop/coding-standards-workshop'
+lint-and-test	Check out repository	2026-10-08T17:26:01.5463237Z [command]/usr/bin/git version
+lint-and-test	Check out repository	2026-10-08T17:26:01.5531040Z git version 2.55.0
+lint-and-test	Check out repository	2026-10-08T17:26:01.5547540Z ##[endgroup]
+lint-and-test	Check out repository	2026-10-08T17:26:01.5558064Z Temporarily overriding HOME='/home/runner/work/_temp/89349484-d34f-436b-a8aa-221e431bf44f' before making global git config changes
+lint-and-test	Check out repository	2026-10-08T17:26:01.5559224Z Adding repository directory to the temporary git global config as a safe directory
+lint-and-test	Check out repository	2026-10-08T17:26:01.5562168Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/coding-standards-workshop/coding-standards-workshop
+lint-and-test	Check out repository	2026-10-08T17:26:01.5605278Z Deleting the contents of '/home/runner/work/coding-standards-workshop/coding-standards-workshop'
+lint-and-test	Check out repository	2026-10-08T17:26:01.5609360Z ##[group]Determining repository object format
+lint-and-test	Check out repository	2026-10-08T17:26:01.5611320Z ##[endgroup]
+lint-and-test	Check out repository	2026-10-08T17:26:01.5612242Z ##[group]Initializing the repository
+lint-and-test	Check out repository	2026-10-08T17:26:01.5614991Z [command]/usr/bin/git init /home/runner/work/coding-standards-workshop/coding-standards-workshop
+lint-and-test	Check out repository	2026-10-08T17:26:01.5711660Z hint: Using 'master' as the name for the initial branch. This default branch name
+lint-and-test	Check out repository	2026-10-08T17:26:01.5712284Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+lint-and-test	Check out repository	2026-10-08T17:26:01.5713078Z hint: to use in all of your new repositories, which will suppress this warning,
+lint-and-test	Check out repository	2026-10-08T17:26:01.5713470Z hint: call:
+lint-and-test	Check out repository	2026-10-08T17:26:01.5713684Z hint:
+lint-and-test	Check out repository	2026-10-08T17:26:01.5713974Z hint: 	git config --global init.defaultBranch <name>
+lint-and-test	Check out repository	2026-10-08T17:26:01.5714307Z hint:
+lint-and-test	Check out repository	2026-10-08T17:26:01.5714607Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+lint-and-test	Check out repository	2026-10-08T17:26:01.5715089Z hint: 'development'. The just-created branch can be renamed via this command:
+lint-and-test	Check out repository	2026-10-08T17:26:01.5715472Z hint:
+lint-and-test	Check out repository	2026-10-08T17:26:01.5715691Z hint: 	git branch -m <name>
+lint-and-test	Check out repository	2026-10-08T17:26:01.5715940Z hint:
+lint-and-test	Check out repository	2026-10-08T17:26:01.5716294Z hint: Disable this message with "git config set advice.defaultBranchName false"
+lint-and-test	Check out repository	2026-10-08T17:26:01.5720479Z Initialized empty Git repository in /home/runner/work/coding-standards-workshop/coding-standards-workshop/.git/
+lint-and-test	Check out repository	2026-10-08T17:26:01.5727722Z [command]/usr/bin/git remote add origin https://github.com/Sam-24-dev/coding-standards-workshop
+lint-and-test	Check out repository	2026-10-08T17:26:01.5769972Z ##[endgroup]
+lint-and-test	Check out repository	2026-10-08T17:26:01.5770599Z ##[group]Disabling automatic garbage collection
+lint-and-test	Check out repository	2026-10-08T17:26:01.5773118Z [command]/usr/bin/git config --local gc.auto 0
+lint-and-test	Check out repository	2026-10-08T17:26:01.5803805Z ##[endgroup]
+lint-and-test	Check out repository	2026-10-08T17:26:01.5804221Z ##[group]Setting up auth
+lint-and-test	Check out repository	2026-10-08T17:26:01.5804922Z Removing SSH command configuration
+lint-and-test	Check out repository	2026-10-08T17:26:01.5810690Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+lint-and-test	Check out repository	2026-10-08T17:26:01.5839146Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+lint-and-test	Check out repository	2026-10-08T17:26:01.6135019Z Removing HTTP extra header
+lint-and-test	Check out repository	2026-10-08T17:26:01.6139842Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+lint-and-test	Check out repository	2026-10-08T17:26:01.6167394Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+lint-and-test	Check out repository	2026-10-08T17:26:01.6328872Z Removing includeIf entries pointing to credentials config files
+lint-and-test	Check out repository	2026-10-08T17:26:01.6334525Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+lint-and-test	Check out repository	2026-10-08T17:26:01.6360895Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+lint-and-test	Check out repository	2026-10-08T17:26:01.6531787Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-958a942d-1377-420a-b3dc-f4b5d84884d8.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+lint-and-test	Check out repository	2026-10-08T17:26:01.6562509Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/coding-standards-workshop/coding-standards-workshop/.git.path /home/runner/work/_temp/git-credentials-958a942d-1377-420a-b3dc-f4b5d84884d8.config
+lint-and-test	Check out repository	2026-10-08T17:26:01.6589947Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/coding-standards-workshop/coding-standards-workshop/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-958a942d-1377-420a-b3dc-f4b5d84884d8.config
+lint-and-test	Check out repository	2026-10-08T17:26:01.6618504Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-958a942d-1377-420a-b3dc-f4b5d84884d8.config
+lint-and-test	Check out repository	2026-10-08T17:26:01.6646573Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-958a942d-1377-420a-b3dc-f4b5d84884d8.config
+lint-and-test	Check out repository	2026-10-08T17:26:01.6672041Z ##[endgroup]
+lint-and-test	Check out repository	2026-10-08T17:26:01.6672462Z ##[group]Fetching the repository
+lint-and-test	Check out repository	2026-10-08T17:26:01.6677011Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +e59c46bfe464a55989868f1d41e67af4a9914c41:refs/remotes/origin/main
+lint-and-test	Check out repository	2026-10-08T17:26:02.1949937Z From https://github.com/Sam-24-dev/coding-standards-workshop
+lint-and-test	Check out repository	2026-10-08T17:26:02.1950652Z  * [new ref]         e59c46bfe464a55989868f1d41e67af4a9914c41 -> origin/main
+lint-and-test	Check out repository	2026-10-08T17:26:02.1958554Z [command]/usr/bin/git branch --list --remote origin/main
+lint-and-test	Check out repository	2026-10-08T17:26:02.1981721Z   origin/main
+lint-and-test	Check out repository	2026-10-08T17:26:02.1988488Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+lint-and-test	Check out repository	2026-10-08T17:26:02.2007929Z e59c46bfe464a55989868f1d41e67af4a9914c41
+lint-and-test	Check out repository	2026-10-08T17:26:02.2012267Z ##[endgroup]
+lint-and-test	Check out repository	2026-10-08T17:26:02.2013030Z ##[group]Determining the checkout info
+lint-and-test	Check out repository	2026-10-08T17:26:02.2013679Z ##[endgroup]
+lint-and-test	Check out repository	2026-10-08T17:26:02.2016250Z [command]/usr/bin/git sparse-checkout disable
+lint-and-test	Check out repository	2026-10-08T17:26:02.2192112Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+lint-and-test	Check out repository	2026-10-08T17:26:02.2223559Z ##[group]Checking out the ref
+lint-and-test	Check out repository	2026-10-08T17:26:02.2224085Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+lint-and-test	Check out repository	2026-10-08T17:26:02.2356872Z Switched to a new branch 'main'
+lint-and-test	Check out repository	2026-10-08T17:26:02.2362011Z branch 'main' set up to track 'origin/main'.
+lint-and-test	Check out repository	2026-10-08T17:26:02.2366916Z ##[endgroup]
+lint-and-test	Check out repository	2026-10-08T17:26:02.2398989Z [command]/usr/bin/git log -1 --format=%H
+lint-and-test	Check out repository	2026-10-08T17:26:02.2421050Z e59c46bfe464a55989868f1d41e67af4a9914c41
+lint-and-test	Set up Python	﻿2026-10-08T17:26:02.2625666Z ##[group]Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+lint-and-test	Set up Python	2026-10-08T17:26:02.2626143Z with:
+lint-and-test	Set up Python	2026-10-08T17:26:02.2626401Z   python-version: 3.11
+lint-and-test	Set up Python	2026-10-08T17:26:02.2626689Z   check-latest: false
+lint-and-test	Set up Python	2026-10-08T17:26:02.2628987Z   token: ***
+lint-and-test	Set up Python	2026-10-08T17:26:02.2629252Z   update-environment: true
+lint-and-test	Set up Python	2026-10-08T17:26:02.2629751Z   allow-prereleases: false
+lint-and-test	Set up Python	2026-10-08T17:26:02.2630051Z   freethreaded: false
+lint-and-test	Set up Python	2026-10-08T17:26:02.2630329Z ##[endgroup]
+lint-and-test	Set up Python	2026-10-08T17:26:02.3406843Z ##[group]Installed versions
+lint-and-test	Set up Python	2026-10-08T17:26:02.3467159Z Successfully set up CPython (3.11.17)
+lint-and-test	Set up Python	2026-10-08T17:26:02.3467970Z ##[endgroup]
+lint-and-test	Install pinned lint tools	﻿2026-10-08T17:26:02.3603354Z ##[group]Run python -m pip install -r requirements-dev.txt
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:02.3604219Z [36;1mpython -m pip install -r requirements-dev.txt[0m
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:02.3961771Z shell: /usr/bin/bash -e {0}
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:02.3962214Z env:
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:02.3962538Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:02.3963017Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:02.3963485Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:02.3963914Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:02.3964336Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:02.3964770Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:02.4016598Z ##[endgroup]
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:03.2612426Z Collecting flake8==7.4.1 (from -r requirements-dev.txt (line 1))
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:03.3238003Z   Downloading flake8-7.4.1-py2.py3-none-any.whl.metadata (3.8 kB)
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:03.3692822Z Collecting flake8-html==0.4.3 (from -r requirements-dev.txt (line 2))
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:03.3792161Z   Downloading flake8_html-0.4.3-py2.py3-none-any.whl.metadata (3.3 kB)
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:03.4016446Z Collecting mccabe<0.8.0,>=0.7.0 (from flake8==7.4.1->-r requirements-dev.txt (line 1))
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:03.4111014Z   Downloading mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:03.4331671Z Collecting pycodestyle<2.16.0,>=2.15.0 (from flake8==7.4.1->-r requirements-dev.txt (line 1))
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:03.4425509Z   Downloading pycodestyle-2.15.0-py2.py3-none-any.whl.metadata (4.5 kB)
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:03.4665347Z Collecting pyflakes<4.1.0,>=4.0.0 (from flake8==7.4.1->-r requirements-dev.txt (line 1))
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:03.4759965Z   Downloading pyflakes-4.0.3-py2.py3-none-any.whl.metadata (3.7 kB)
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:03.5778456Z Collecting jinja2>=3.1.0 (from flake8-html==0.4.3->-r requirements-dev.txt (line 2))
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:03.5874257Z   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:03.6115169Z Collecting pygments>=2.2.0 (from flake8-html==0.4.3->-r requirements-dev.txt (line 2))
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:03.6210049Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:03.7164012Z Collecting MarkupSafe>=2.0 (from jinja2>=3.1.0->flake8-html==0.4.3->-r requirements-dev.txt (line 2))
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:03.7262558Z   Downloading markupsafe-3.0.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:03.7985232Z Downloading flake8-7.4.1-py2.py3-none-any.whl (57 kB)
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:03.8265433Z Downloading flake8_html-0.4.3-py2.py3-none-any.whl (13 kB)
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:03.8403968Z Downloading mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:03.8581384Z Downloading pycodestyle-2.15.0-py2.py3-none-any.whl (31 kB)
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:03.8865016Z Downloading pyflakes-4.0.3-py2.py3-none-any.whl (66 kB)
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:03.9011251Z Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:03.9207803Z Downloading markupsafe-3.0.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:03.9961032Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:04.0350127Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 34.6 MB/s  0:00:00
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:04.0715588Z Installing collected packages: pygments, pyflakes, pycodestyle, mccabe, MarkupSafe, jinja2, flake8, flake8-html
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:04.6907603Z 
+lint-and-test	Install pinned lint tools	2026-10-08T17:26:04.6919933Z Successfully installed MarkupSafe-3.0.4 flake8-7.4.1 flake8-html-0.4.3 jinja2-3.1.6 mccabe-0.7.0 pycodestyle-2.15.0 pyflakes-4.0.3 pygments-2.21.0
+lint-and-test	Check coding standards	﻿2026-10-08T17:26:04.7836121Z ##[group]Run python -m flake8 --isolated test.py tests
+lint-and-test	Check coding standards	2026-10-08T17:26:04.7836388Z [36;1mpython -m flake8 --isolated test.py tests[0m
+lint-and-test	Check coding standards	2026-10-08T17:26:04.7888929Z shell: /usr/bin/bash -e {0}
+lint-and-test	Check coding standards	2026-10-08T17:26:04.7889072Z env:
+lint-and-test	Check coding standards	2026-10-08T17:26:04.7889223Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+lint-and-test	Check coding standards	2026-10-08T17:26:04.7889608Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+lint-and-test	Check coding standards	2026-10-08T17:26:04.7889955Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+lint-and-test	Check coding standards	2026-10-08T17:26:04.7890250Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+lint-and-test	Check coding standards	2026-10-08T17:26:04.7890545Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+lint-and-test	Check coding standards	2026-10-08T17:26:04.7890847Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+lint-and-test	Check coding standards	2026-10-08T17:26:04.7891104Z ##[endgroup]
+lint-and-test	Run behavioral tests	﻿2026-10-08T17:26:05.1640654Z ##[group]Run python -m unittest discover -s tests -v
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.1640918Z [36;1mpython -m unittest discover -s tests -v[0m
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.1691820Z shell: /usr/bin/bash -e {0}
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.1691964Z env:
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.1692116Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.17/x64
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.1692350Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib/pkgconfig
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.1692585Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.1692790Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.1692992Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.17/x64
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.1693195Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.17/x64/lib
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.1693369Z ##[endgroup]
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3386333Z test_eof_is_graceful (test_student.CLITests.test_eof_is_graceful) ... ok
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3467743Z test_invalid_inputs_recover_without_crashes (test_student.CLITests.test_invalid_inputs_recover_without_crashes) ... ok
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3471881Z test_keyboard_interrupt_is_graceful (test_student.CLITests.test_keyboard_interrupt_is_graceful) ... ok
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3551636Z test_multiple_students_are_addressable (test_student.CLITests.test_multiple_students_are_addressable) ... ok
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3630895Z test_normal_create_add_remove_and_summary (test_student.CLITests.test_normal_create_add_remove_and_summary) ... ok
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3632979Z test_continuous_letter_pass_and_honor_thresholds (test_student.StudentTests.test_continuous_letter_pass_and_honor_thresholds) ... ok
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3633988Z test_honor_and_status_recompute_after_changes (test_student.StudentTests.test_honor_and_status_recompute_after_changes) ... ok
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3640518Z test_identity_strips_whitespace (test_student.StudentTests.test_identity_strips_whitespace) ... ok
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3641067Z test_invalid_grades_leave_data_unchanged (test_student.StudentTests.test_invalid_grades_leave_data_unchanged) ... ok
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3641534Z test_invalid_identity (test_student.StudentTests.test_invalid_identity) ... ok
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3642072Z test_invalid_indices_leave_grades_unchanged (test_student.StudentTests.test_invalid_indices_leave_grades_unchanged) ... ok
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3642557Z test_invalid_removal_values (test_student.StudentTests.test_invalid_removal_values) ... ok
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3643093Z test_missing_value_leaves_grades_unchanged (test_student.StudentTests.test_missing_value_leaves_grades_unchanged) ... ok
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3643681Z test_multiple_numeric_grades_and_decimal_average (test_student.StudentTests.test_multiple_numeric_grades_and_decimal_average) ... ok
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3644259Z test_remove_value_removes_first_duplicate (test_student.StudentTests.test_remove_value_removes_first_duplicate) ... ok
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3644748Z test_remove_zero_based_index (test_student.StudentTests.test_remove_zero_based_index) ... ok
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3645231Z test_removing_from_empty_student (test_student.StudentTests.test_removing_from_empty_student) ... ok
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3645715Z test_report_has_all_seven_fields (test_student.StudentTests.test_report_has_all_seven_fields) ... ok
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3646238Z test_students_have_independent_grades (test_student.StudentTests.test_students_have_independent_grades) ... ok
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3646673Z test_ungraded_report (test_student.StudentTests.test_ungraded_report) ... ok
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3647091Z test_ungraded_results (test_student.StudentTests.test_ungraded_results) ... ok
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3647338Z 
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3647576Z ----------------------------------------------------------------------
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3649153Z Ran 21 tests in 0.050s
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3649577Z 
+lint-and-test	Run behavioral tests	2026-10-08T17:26:05.3649649Z OK
+lint-and-test	Post Set up Python	﻿2026-10-08T17:26:05.3854778Z Post job cleanup.
+lint-and-test	Post Check out repository	﻿2026-10-08T17:26:05.4653553Z Post job cleanup.
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.5186701Z [command]/usr/bin/git version
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.5219024Z git version 2.55.0
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.5244155Z Temporarily overriding HOME='/home/runner/work/_temp/392e4793-e721-4c78-b912-8516ac17f7f3' before making global git config changes
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.5247668Z Adding repository directory to the temporary git global config as a safe directory
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.5248240Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/coding-standards-workshop/coding-standards-workshop
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.5272997Z Removing SSH command configuration
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.5277283Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.5303061Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.5489130Z Removing HTTP extra header
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.5494335Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.5525947Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.5721403Z Removing includeIf entries pointing to credentials config files
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.5722092Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.6102096Z includeif.gitdir:/home/runner/work/coding-standards-workshop/coding-standards-workshop/.git.path
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.6102747Z includeif.gitdir:/home/runner/work/coding-standards-workshop/coding-standards-workshop/.git/worktrees/*.path
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.6103121Z includeif.gitdir:/github/workspace/.git.path
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.6103318Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.6109811Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/coding-standards-workshop/coding-standards-workshop/.git.path
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.6131319Z /home/runner/work/_temp/git-credentials-958a942d-1377-420a-b3dc-f4b5d84884d8.config
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.6140247Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/coding-standards-workshop/coding-standards-workshop/.git.path /home/runner/work/_temp/git-credentials-958a942d-1377-420a-b3dc-f4b5d84884d8.config
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.6262424Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/coding-standards-workshop/coding-standards-workshop/.git/worktrees/*.path
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.6281788Z /home/runner/work/_temp/git-credentials-958a942d-1377-420a-b3dc-f4b5d84884d8.config
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.6288009Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/coding-standards-workshop/coding-standards-workshop/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-958a942d-1377-420a-b3dc-f4b5d84884d8.config
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.6343443Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.6363393Z /github/runner_temp/git-credentials-958a942d-1377-420a-b3dc-f4b5d84884d8.config
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.6368301Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-958a942d-1377-420a-b3dc-f4b5d84884d8.config
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.6425660Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.6445302Z /github/runner_temp/git-credentials-958a942d-1377-420a-b3dc-f4b5d84884d8.config
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.6482359Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-958a942d-1377-420a-b3dc-f4b5d84884d8.config
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.6511407Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+lint-and-test	Post Check out repository	2026-10-08T17:26:05.6675376Z Removing credentials config '/home/runner/work/_temp/git-credentials-958a942d-1377-420a-b3dc-f4b5d84884d8.config'
+lint-and-test	Complete job	﻿2026-10-08T17:26:05.6787177Z Cleaning up orphan processes
