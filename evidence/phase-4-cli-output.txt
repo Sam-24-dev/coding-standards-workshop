@@ -1,0 +1,55 @@
+Student Grade Management (data is not saved after exit)
+
+1 Create student | 2 Add grade | 3 Remove by value
+4 Remove by index (zero-based) | 5 Summary | 0 Exit
+Choice: Student ID: Student name: Student created.
+
+1 Create student | 2 Add grade | 3 Remove by value
+4 Remove by index (zero-based) | 5 Summary | 0 Exit
+Choice: Student ID: Grade (0-100): Grade added.
+
+1 Create student | 2 Add grade | 3 Remove by value
+4 Remove by index (zero-based) | 5 Summary | 0 Exit
+Choice: Student ID: Grade (0-100): Grade added.
+
+1 Create student | 2 Add grade | 3 Remove by value
+4 Remove by index (zero-based) | 5 Summary | 0 Exit
+Choice: Student ID: Student ID: DEMO-01
+Student Name: Example Student
+Number of Grades: 2
+Average Grade: 83.75
+Letter Grade: B
+Pass/Fail: Passed
+Honor Roll: False
+
+1 Create student | 2 Add grade | 3 Remove by value
+4 Remove by index (zero-based) | 5 Summary | 0 Exit
+Choice: Student ID: Grade: Grade removed.
+
+1 Create student | 2 Add grade | 3 Remove by value
+4 Remove by index (zero-based) | 5 Summary | 0 Exit
+Choice: Student ID: Grades (zero-based order): (72.5,)
+Grade index (zero-based): Grade removed.
+
+1 Create student | 2 Add grade | 3 Remove by value
+4 Remove by index (zero-based) | 5 Summary | 0 Exit
+Choice: Student ID: Student ID: DEMO-01
+Student Name: Example Student
+Number of Grades: 0
+Average Grade: N/A
+Letter Grade: N/A
+Pass/Fail: Not graded
+Honor Roll: False
+
+1 Create student | 2 Add grade | 3 Remove by value
+4 Remove by index (zero-based) | 5 Summary | 0 Exit
+Choice: Student ID: Grade (0-100): Error: could not convert string to float: 'Fifty'
+
+1 Create student | 2 Add grade | 3 Remove by value
+4 Remove by index (zero-based) | 5 Summary | 0 Exit
+Choice: Student ID: Grades (zero-based order): ()
+Grade index (zero-based): Error: Grade index is out of range (zero-based).
+
+1 Create student | 2 Add grade | 3 Remove by value
+4 Remove by index (zero-based) | 5 Summary | 0 Exit
+Choice: Goodbye.

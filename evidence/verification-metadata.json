@@ -1,0 +1,58 @@
+{
+  "phase-4-tests": {
+    "command": [
+      ".venv/Scripts/python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "exit_code": 0,
+    "stdout_bytes": 0,
+    "stderr_bytes": 2348
+  },
+  "phase-5-final-lint": {
+    "command": [
+      ".venv/Scripts/python.exe",
+      "-m",
+      "flake8",
+      "--isolated",
+      "test.py",
+      "tests",
+      "--format=html",
+      "--htmldir=reports/final",
+      "--htmlpep8",
+      "true",
+      "--statistics"
+    ],
+    "exit_code": 0,
+    "stdout_bytes": 0,
+    "stderr_bytes": 0
+  },
+  "phase-5-final-tests": {
+    "command": [
+      ".venv/Scripts/python.exe",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "exit_code": 0,
+    "stdout_bytes": 0,
+    "stderr_bytes": 2348
+  },
+  "phase-4-cli": {
+    "command": [
+      ".venv/Scripts/python.exe",
+      "test.py"
+    ],
+    "stdin": "evidence/phase-4-cli-input.txt",
+    "exit_code": 0,
+    "stdout_bytes": 1993,
+    "stderr_bytes": 0
+  }
+}

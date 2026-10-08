@@ -1,0 +1,17 @@
+Privacy-redacted public derivative; only local absolute paths replaced.
+Original SHA256: 26E65A2EDD290053BDC317EB0AB74820A641B009225A7AA771E4F78E2463C500
+
+python.exe : Traceback (most recent call last):
+En línea: 2 Carácter: 102
++ ... 'Continue'; & .\.venv\Scripts\python.exe test.py *> evidence\phase-2- ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "<PROJECT>\test.py", line 42, in <module>
+    startrun()
+  File "<PROJECT>\test.py", line 36, in startrun
+    a.calcaverage()
+  File "<PROJECT>\test.py", line 15, in calcaverage
+    t += x
+TypeError: unsupported operand type(s) for +=: 'int' and 'str'

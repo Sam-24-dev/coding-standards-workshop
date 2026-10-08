@@ -2,3 +2,7 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
+/evidence/phase-2-original-runtime.txt
+/evidence/tool-versions.txt
+/evidence/baseline-preservation.json
+/evidence/implementation-freeze.json

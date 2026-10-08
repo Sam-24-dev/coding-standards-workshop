@@ -1,0 +1,26 @@
+test_eof_is_graceful (test_student.CLITests.test_eof_is_graceful) ... ok
+test_invalid_inputs_recover_without_crashes (test_student.CLITests.test_invalid_inputs_recover_without_crashes) ... ok
+test_keyboard_interrupt_is_graceful (test_student.CLITests.test_keyboard_interrupt_is_graceful) ... ok
+test_multiple_students_are_addressable (test_student.CLITests.test_multiple_students_are_addressable) ... ok
+test_normal_create_add_remove_and_summary (test_student.CLITests.test_normal_create_add_remove_and_summary) ... ok
+test_continuous_letter_pass_and_honor_thresholds (test_student.StudentTests.test_continuous_letter_pass_and_honor_thresholds) ... ok
+test_honor_and_status_recompute_after_changes (test_student.StudentTests.test_honor_and_status_recompute_after_changes) ... ok
+test_identity_strips_whitespace (test_student.StudentTests.test_identity_strips_whitespace) ... ok
+test_invalid_grades_leave_data_unchanged (test_student.StudentTests.test_invalid_grades_leave_data_unchanged) ... ok
+test_invalid_identity (test_student.StudentTests.test_invalid_identity) ... ok
+test_invalid_indices_leave_grades_unchanged (test_student.StudentTests.test_invalid_indices_leave_grades_unchanged) ... ok
+test_invalid_removal_values (test_student.StudentTests.test_invalid_removal_values) ... ok
+test_missing_value_leaves_grades_unchanged (test_student.StudentTests.test_missing_value_leaves_grades_unchanged) ... ok
+test_multiple_numeric_grades_and_decimal_average (test_student.StudentTests.test_multiple_numeric_grades_and_decimal_average) ... ok
+test_remove_value_removes_first_duplicate (test_student.StudentTests.test_remove_value_removes_first_duplicate) ... ok
+test_remove_zero_based_index (test_student.StudentTests.test_remove_zero_based_index) ... ok
+test_removing_from_empty_student (test_student.StudentTests.test_removing_from_empty_student) ... ok
+test_report_has_all_seven_fields (test_student.StudentTests.test_report_has_all_seven_fields) ... ok
+test_students_have_independent_grades (test_student.StudentTests.test_students_have_independent_grades) ... ok
+test_ungraded_report (test_student.StudentTests.test_ungraded_report) ... ok
+test_ungraded_results (test_student.StudentTests.test_ungraded_results) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.529s
+
+OK

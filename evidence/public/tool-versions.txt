@@ -1,0 +1,25 @@
+Privacy-redacted public derivative; only local absolute paths replaced.
+Original SHA256: 6D68495F44487C9C0CD0A0DBF2176D0A5869843C4B276C7DA19FA2FE679D565F
+
+Name: flake8
+Version: 7.4.1
+Summary: the modular source code checker: pep8 pyflakes and co
+Home-page: https://github.com/pycqa/flake8
+Author: Tarek Ziade
+Author-email: tarek@ziade.org
+License: MIT
+Location: <PROJECT>\.venv\Lib\site-packages
+Requires: mccabe, pycodestyle, pyflakes
+Required-by: flake8-html
+---
+Name: flake8-html
+Version: 0.4.3
+Summary: Generate HTML reports of flake8 violations
+Home-page: https://github.com/lordmauve/flake8-html
+Author: Daniel Pope
+Author-email: mauve@mauveweb.co.uk
+License: Apache Software License 2.0
+Location: <PROJECT>\.venv\Lib\site-packages
+Requires: flake8, jinja2, pygments
+Required-by: 
+Flake8 CLI: 7.4.1 (flake8-html: 0.4.3, mccabe: 0.7.0, pycodestyle: 2.15.0, pyflakes: 4.0.3) CPython 3.11.9 on Windows

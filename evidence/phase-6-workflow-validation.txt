@@ -1,0 +1,6 @@
+PASS: pull_request branches == [main] and workflow_dispatch is enabled
+PASS: contents permission is read-only; runner is ubuntu-latest; Python is 3.11
+PASS: all GitHub actions are pinned to full 40-hex SHAs
+PASS: install, lint, test commands and direct requirement pins match
+
+Captured validator process exit code: 0
